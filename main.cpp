@@ -1,4 +1,3 @@
-#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <SDL2/SDL.h>
 #include <string>
@@ -37,7 +36,7 @@ int main(int argc, char** argv)
 
 	SDL_AudioSpec wavSpec;
 	Uint8* wavStart;
-	Uint32 wavLength;
+	Uint32 wavLength; 
 
 	if (SDL_LoadWAV(FILE_PATH, &wavSpec, &wavStart, &wavLength) == NULL)
 	{
